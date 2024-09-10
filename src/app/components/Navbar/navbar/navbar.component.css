@@ -1,0 +1,25 @@
+mat-toolbar {
+  display: flex; /* Enables flexbox layout within the toolbar */
+  justify-content: space-between; /* Aligns children to each side of the toolbar */
+  color: white; /* Ensures text is white */
+  font-weight: bold; /* Bold font style */
+  padding: 10px 0; /* Adjust padding */
+}
+
+mat-toolbar button {
+  margin-right: 8px; /* Spacing between buttons */
+}
+
+mat-toolbar mat-icon {
+  margin-right: 5px; /* Adds spacing between icon and text */
+}
+.fixed-toolbar {
+  position: fixed; /* Fixes the toolbar at the top of the viewport */
+  top: 0; /* Aligns the toolbar at the very top */
+  width: 100%; /* Ensures the toolbar spans the full width of the viewport */
+  z-index: 1000; /* Ensures the toolbar stays on top of other content */
+}
+
+body {
+  padding-top: 64px; /* Adds padding at the top of the body to account for the fixed toolbar */
+}

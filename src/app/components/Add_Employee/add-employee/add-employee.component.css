@@ -1,0 +1,37 @@
+/* Styles for the mat-card to ensure it looks good on all devices */
+mat-card {
+  max-width: 800px; /* Sets a maximum width for the card */
+  margin: 20px auto; /* Centers the card horizontally and adds margin from top */
+  padding: 20px; /* Adds padding inside the card for spacing around the content */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds subtle shadow for depth */
+}
+
+/* Ensures that the form itself uses a flexbox layout to organize fields vertically */
+.example-form {
+  display: flex;
+  flex-direction: column; /* Aligns form fields vertically */
+  width: 100%; /* Uses full width */
+}
+
+/* Styles for each material form field within the card */
+.mat-form-field {
+  width: 100%; /* Ensures that each form field takes full width */
+  margin-bottom: 16px; /* Adds space between form fields for clear separation */
+}
+
+/* Styles for inputs to enhance readability */
+input.mat-input, textarea.mat-input {
+  font-size: 16px; /* Sets a readable font size */
+  padding: 8px; /* Adds padding for better text alignment within inputs */
+}
+
+/* Button styling to make it stand out and align with form fields */
+button {
+  margin-top: 20px; /* Spaces the button away from the last form field */
+  width: 100%; /* Ensures button width matches the form fields */
+}
+
+/* Specific adjustments for the datepicker toggle to align properly */
+.mat-datepicker-toggle {
+  margin-top: -6px; /* Adjusts the vertical position to align with other inputs */
+}

@@ -1,0 +1,30 @@
+<mat-toolbar class="fixed-toolbar" style="background: linear-gradient(to right, red, orange, green, blue, indigo, violet);">
+  <!-- Left-aligned buttons -->
+  <div style="flex: 1;">
+    <button mat-button routerLink="/home" matTooltip="Home">
+      <mat-icon>home</mat-icon> Home
+    </button>
+    <button mat-button routerLink="/list-employee">
+      <mat-icon>people</mat-icon> Employees
+    </button>
+    <button mat-button routerLink="/add-employee">
+      <mat-icon>person_add</mat-icon> Add Employees
+    </button>
+    <button mat-button routerLink="/about">
+      <mat-icon>info</mat-icon> About
+    </button>
+    <button mat-button routerLink="/contact">
+      <mat-icon>contacts</mat-icon> Contact
+    </button>
+  </div>
+
+  <!-- Right-aligned buttons -->
+  <div>
+    <button mat-button routerLink="/login">
+      <mat-icon>login</mat-icon> Login
+    </button>
+    <button mat-button routerLink="/signup">
+      <mat-icon>person_add</mat-icon> Sign Up
+    </button>
+  </div>
+</mat-toolbar>

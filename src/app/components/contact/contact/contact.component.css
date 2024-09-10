@@ -1,0 +1,21 @@
+.example-form {
+  width: 100%; /* Ensure the form uses all available space */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the fields vertically */
+}
+
+.example-full-width {
+  width: 80%; /* Adjust this value to set the desired width */
+  max-width: 500px; /* Optionally set a max-width for larger screens */
+  margin-bottom: 20px; /* Adds space between fields */
+}
+
+.example-full-width input {
+  font-size: 18px; /* Increases the font size for input fields */
+  height: 48px; /* Optionally increase the height of the input fields */
+}
+
+[fixed-size] textarea {
+  height: 120px; /* Fixed height for the textarea */
+}

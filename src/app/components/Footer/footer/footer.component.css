@@ -1,0 +1,14 @@
+mat-toolbar {
+  color: white; /* Ensures text is white */
+  font-weight: bold; /* Bold font style */
+  padding: 10px 0; /* Adjust padding */
+  font-size: 0.85rem; /* Adjust font size for better readability */
+}
+
+button {
+  margin: 0 10px; /* Spacing between buttons */
+}
+
+span {
+  white-space: nowrap; /* Prevents the text from wrapping */
+}

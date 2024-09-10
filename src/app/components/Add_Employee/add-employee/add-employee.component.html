@@ -1,0 +1,54 @@
+<mat-card>
+  <mat-card-content>
+    <form class="example-form" #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)" novalidate>
+      <mat-form-field class="example-full-width">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Enter your name" name="name" [(ngModel)]="user.name" required>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Username</mat-label>
+        <input matInput placeholder="Enter your username" name="username" [(ngModel)]="user.username" required>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" placeholder="Enter your password" name="password" [(ngModel)]="user.password" required>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" placeholder="Enter your email" name="email" [(ngModel)]="user.email" required>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Mobile</mat-label>
+        <input matInput placeholder="Enter your mobile number" name="mobile" [(ngModel)]="user.mobile" required>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Designation</mat-label>
+        <input matInput placeholder="Enter your designation" name="designation" [(ngModel)]="user.designation">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Department</mat-label>
+        <input matInput placeholder="Enter your department" name="department" [(ngModel)]="user.department">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Date of Joining</mat-label>
+        <input matInput [matDatepicker]="picker" placeholder="Pick a date" name="dateOfJoining" [(ngModel)]="user.dateOfJoining" required>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width" fixed-size>
+        <mat-label>Address</mat-label>
+        <textarea matInput placeholder="Enter your address" name="address" [(ngModel)]="user.address" required rows="3"></textarea>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit" [disabled]="!userForm.valid">Submit</button>
+    </form>
+  </mat-card-content>
+</mat-card>

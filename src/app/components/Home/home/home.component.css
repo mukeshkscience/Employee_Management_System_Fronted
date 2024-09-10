@@ -1,0 +1,11 @@
+.animated-image {
+  width: 100%; /* Ensures the container spans the full width */
+  display: flex;
+  justify-content: center; /* Centers the content if needed */
+}
+
+.employee-image {
+  width: 100%; /* Makes the image take up the full width of its container */
+  height: 40rem; /* Adjusts the height automatically to maintain aspect ratio */
+  object-fit: cover; /* Covers the height dimension without distorting the image */
+}
